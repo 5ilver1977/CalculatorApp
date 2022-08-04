@@ -39,6 +39,26 @@ final class HomeViewController: UIViewController {
     @IBOutlet weak var operatorMultiplication: UIButton!
     @IBOutlet weak var operatorDivision: UIButton!
     
+    // MARK: - Variables
+    
+    private var total: Double = 0                    // total
+    private var temp: Double = 0                     // valor por pantalla
+    private var operating = false                    // Indicar si se  ha sellecionado un operador
+    private var decimal = false                      // indicar si el valor es decimal
+    private var operation: operationType = .none     // operacion actual
+    
+    // MARK: - Constantes
+    
+    private let kDecimalSeparator = Locale.current.decimalSeparator!
+    private let kMaxLength = 9
+    private let kMaxValue: Double = 999999999
+    private let kMinValue: Double = 0.00000001
+    
+    private enum operationType {
+        case none, addition, substraction, multiplication, division, percent
+    }
+    
+    
     // MARK: - Initialization
     
     init() {
