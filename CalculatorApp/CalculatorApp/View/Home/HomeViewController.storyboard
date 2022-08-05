@@ -370,7 +370,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMz-HQ-o0H">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="50" translatesAutoresizingMaskIntoConstraints="NO" id="bMz-HQ-o0H">
                                 <rect key="frame" x="20" y="210.5" width="374" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="bMz-HQ-o0H" secondAttribute="height" multiplier="22:7" id="7EZ-qu-9hw"/>
